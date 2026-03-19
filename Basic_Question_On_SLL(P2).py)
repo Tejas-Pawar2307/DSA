@@ -1,0 +1,36 @@
+# Q.1 Write a function for Sum of all Nodes.
+
+def sum_of_all_nodes(self):
+    total = 0
+    temp = self.start
+
+    while temp is not None:
+        total += temp.data
+        temp = temp.next
+    
+    return total
+
+
+# Q.2 Write a function to count even numbers in SLL.
+
+def count_even_number(self):
+    count = 0
+    temp = self.start
+
+    while temp is not None:
+        if temp.data % 2 == 0:
+            count += 1
+        temp = temp.next
+    return count
+
+# Q.3 Write a Function to count nodes that have a value is greater than a given number.
+
+def count_value_greater_than(self,value):
+    count = 0
+    temp = self.start
+
+    while temp is not None:
+        if temp.data > value:
+            count += 1
+        temp = temp.next
+    return count
